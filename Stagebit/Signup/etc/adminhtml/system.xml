@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Stagebit
+ * Stagebit Signup Form
+ * @category   Stagebit
+ * @package    Stagebit_Signup
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Config/etc/system_file.xsd">
+    <system>
+        <tab id="stagebit_signup" translate="label" sortOrder="700">
+            <label>Signup Form</label>
+        </tab>
+        <section id="signup_form" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Signup Form</label>
+            <tab>stagebit_signup</tab>
+            <resource>Stagebit_Signup::stagebit_signup</resource>
+            <!-- General Group -->
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General</label>
+                <field id="enable" translate="label" type="select" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable Sign-up Module</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <config_path>signup_form/general/enable</config_path>
+                    <comment>module enable/disable</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

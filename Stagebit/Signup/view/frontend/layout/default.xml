@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+	<body>
+		<referenceBlock name="privacy-policy-link" remove="true"/>
+		<!-- add menu in footer -->
+		<referenceBlock name="footer_links">
+			<block class="Magento\Framework\View\Element\Html\Link\Current" name="signup-footer-link" ifconfig="signup_form/general/enable">
+				<arguments>
+					<argument name="label" xsi:type="string">Stagebit Signup</argument>
+					<argument name="path" xsi:type="string">signup</argument>
+				</arguments>
+			</block>
+		</referenceBlock>
+	</body>
+</page>

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Stagebit
+ * Stagebit Signup Form
+ *
+ * @category   Stagebit
+ * @package    Stagebit_Signup
+ * @copyright  Copyright © 2020 Stagebit 
+ * @license    
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Magento/Backend/etc/menu.xsd">
+    <menu>
+    	<!-- menu display under customer menu -->
+        <add id="Stagebit_Signup::signup_form" title="Signup Customers" module="Stagebit_Signup" sortOrder="100" parent="Magento_Customer::customer" action="signup/signup/index" resource="Stagebit_Signup::signupform"/>
+
+        <add id="Stagebit_Signup::signupform" title="Configuration" module="Stagebit_Signup" sortOrder="200" parent="Stagebit_Signup::signup_form" action="adminhtml/system_config/edit/section/signup_form" resource="Stagebit_Signup::signupform"/>
+    </menu>
+</config>

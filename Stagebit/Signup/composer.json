@@ -1,0 +1,22 @@
+{
+    "name": "Stagebit/Signup",
+    "description": "Magento 2 Customer Signup Form.",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Stagebit",
+            "email": "manisha.vasani8@gmail.com",
+            "homepage": "https://www.stagebit.com/",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Stagebit\\Signup\\": ""
+        }
+    }
+}

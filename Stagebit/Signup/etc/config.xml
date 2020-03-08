@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Stagebit
+ * Stagebit Signup Form
+ * @category   Stagebit
+ * @package    Stagebit_Signup
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Store/etc/config.xsd">
+    <default>
+        <signup_form>
+            <general>
+                <enable>0</enable>
+            </general>
+        </signup_form>
+    </default>
+</config>
